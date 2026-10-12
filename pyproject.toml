@@ -23,4 +23,4 @@ select = ["E", "F", "I", "UP", "B"]
 python_version = "3.11"
 strict = true
 ignore_missing_imports = true
-files = ["rag", "evals"]
+files = ["rag", "evals", "app.py"]

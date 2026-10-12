@@ -10,6 +10,16 @@ python3.12 -m venv .venv
 export OPENAI_API_KEY=...   # never commit this
 ```
 
+## Use it
+```sh
+.venv/bin/python -m streamlit run app.py          # chat UI: upload, ask, citations, latency
+.venv/bin/python -m rag.ingestion docs/*.pdf      # index from the CLI
+.venv/bin/python -m rag.agent "What is the reimbursement deadline?"
+.venv/bin/python -m evals.run                     # agentic vs single-shot baseline table
+```
+Add `--offline` to the CLIs (or pick **Offline demo** in the UI) to run without a key using
+deterministic lexical fakes; that checks the wiring, not answer quality.
+
 See [AGENTS.md](AGENTS.md) for structure and conventions and
 [.agents/skills/test-app/SKILL.md](.agents/skills/test-app/SKILL.md) for install, run, and
 test instructions.

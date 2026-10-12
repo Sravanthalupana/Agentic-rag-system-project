@@ -58,7 +58,7 @@ Add `--output artifacts/eval.json` for per-question JSON (artifacts/ is gitignor
 Confirm the comparison table lists `agentic` and `baseline` with accuracy, citation validity,
 source coverage, latency, and retrieval count. Never present offline scores as model quality.
 
-## 6. Run the UI (once `app.py` exists)
+## 6. Run the UI
 ```sh
 RAG_DATA_DIR=/tmp/rag-ui-test .venv/bin/python -m streamlit run app.py \
   --server.address 0.0.0.0 --server.port 8501
