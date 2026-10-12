@@ -52,9 +52,9 @@ an abstention ("could not find") for the CEO. With a key, repeat without `--offl
 ```sh
 .venv/bin/python -m evals.run --offline   # deterministic fakes: tests the harness only
 .venv/bin/python -m evals.run             # real OpenAI comparison (paid; needs key)
-Expect: a two-row comparison table (agentic, baseline) plus a per-question pass/FAIL table.
-Add `--output artifacts/eval.json` for per-question JSON (artifacts/ is gitignored).
 ```
+Expect a two-row comparison table (agentic, baseline) plus a per-question pass/FAIL table.
+Add `--output artifacts/eval.json` for per-question JSON (artifacts/ is gitignored).
 Confirm the comparison table lists `agentic` and `baseline` with accuracy, citation validity,
 source coverage, latency, and retrieval count. Never present offline scores as model quality.
 
