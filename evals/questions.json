@@ -1,0 +1,14 @@
+[
+  {"id": "deadline", "question": "What is the reimbursement deadline?", "keywords": [["30 days"]], "sources": ["handbook.txt"]},
+  {"id": "follow-up", "question": "How do I submit it?", "history": [{"role": "user", "content": "What is the reimbursement deadline?"}], "keywords": [["expense portal"]], "sources": ["handbook.txt"]},
+  {"id": "learning", "question": "What is the annual learning budget?", "keywords": [["1200", "1,200"]], "sources": ["handbook.txt"]},
+  {"id": "approval", "question": "Which reimbursement requests need manager approval?", "keywords": [["500"]], "sources": ["handbook.txt"]},
+  {"id": "warranty", "question": "How long does the warranty last?", "keywords": [["2 years", "two years"]], "sources": ["product.txt"]},
+  {"id": "region", "question": "Which region hosts production data?", "keywords": [["eu-west-1"]], "sources": ["operations.txt"]},
+  {"id": "backups", "question": "How often do database backups run?", "keywords": [["6 hours", "six hours"]], "sources": ["operations.txt"]},
+  {"id": "compare-deadlines", "question": "Compare the reimbursement deadline and the customer refund deadline.", "keywords": [["30 days"], ["14 days"]], "sources": ["handbook.txt", "product.txt"]},
+  {"id": "multi-region", "question": "Which region hosts production data and where is the disaster recovery site?", "keywords": [["eu-west-1"], ["eu-central-1"]], "sources": ["operations.txt"]},
+  {"id": "cross-doc", "question": "How long are backups retained and how long does the warranty last?", "keywords": [["30 days"], ["2 years", "two years"]], "sources": ["operations.txt", "product.txt"]},
+  {"id": "greeting", "question": "Hello", "keywords": [["hello", "hi"]], "sources": [], "abstain": false},
+  {"id": "unknown", "question": "Who is the CEO?", "keywords": [], "sources": [], "abstain": true}
+]
