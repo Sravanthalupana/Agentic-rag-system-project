@@ -1,0 +1,13 @@
+Platform Operations Guide
+
+Hosting
+Production data is hosted in the eu-west-1 region.
+The disaster recovery site is in the eu-central-1 region.
+
+Backups
+Database backups run every 6 hours.
+Backups are retained for 30 days and tested monthly.
+
+Incidents
+Incident escalations go to the on-call engineer.
+A severity 1 incident requires a public status page update within 15 minutes.
